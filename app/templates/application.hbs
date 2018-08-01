@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container">
+  <header>
+    <div class="logo">
+      {{#link-to "fruit-machine" class="home"}}
+        <img alt="logo" src="assets/img/logo.png">
+      {{/link-to}}      
+    </div>
+    <div class="menu">
+      <div class="links">
+        {{#link-to "fruit-machine" class="home"}}Home{{/link-to}}
+        {{#link-to "about" class="about"}}About{{/link-to}}
+      </div>
+    </div>
+  </header>
+  <main>
+    {{outlet}}
+  </main>
+  <footer>
+    Simple application in emberjs.....created by me
+  </footer>
+</div>

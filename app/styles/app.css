@@ -1,0 +1,51 @@
+
+body {
+  margin: 0;
+}
+/*main page*/
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  flex-flow: column;
+
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  background-color: lightgray;
+  height: 50px;
+  align-items: center;
+}
+
+.container footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row;
+  background-color: lightgray;
+  height: 50px;
+  align-items: center;
+  padding-right: 10px;
+}
+
+header .logo, header .menu {
+  margin: auto 10px;
+}
+
+.logo img {
+  width: 20%;
+}
+
+/*block-message component*/
+.block-wrapper {
+  display: grid;
+  grid-template-columns:100;
+  grid-template-rows: auto;
+  height: 100%;
+  background-color: bisque;
+}
+
+.block-wrapper span {
+  margin: auto auto;
+}

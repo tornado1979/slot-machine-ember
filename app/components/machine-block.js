@@ -45,7 +45,7 @@ export default Component.extend({
           // group each fruit with its occurences as a {key:value} pairs
       const occurArr = _
         .countBy([this.reelData.Reel1[slotOne], this.reelData.Reel2[slotTwo], this.reelData.Reel3[slotThree]])
-      const fruitWithMaxOccurs = Object.keys(occurArr).filter(key => occurArr[key] > 1) // eslint-disable-line
+      const fruitWithMaxOccurs = Object.keys(occurArr).filter(key => occurArr[key] > 1)
 
       // update the image on each reel
       // i add a small delay on each reel
@@ -66,7 +66,7 @@ export default Component.extend({
         this.set('disabled', false),
 
         // update coins on state
-        Object.keys(this.winsData).filter(key => { // eslint-disable-line
+        Object.keys(this.winsData).filter(key => {
           if (key === fruitWithMaxOccurs[0]) {
             if (this.winsData[fruitWithMaxOccurs][occurArr[fruitWithMaxOccurs]] !== undefined) {
               const coinsWon = this.winsData[fruitWithMaxOccurs][occurArr[fruitWithMaxOccurs]]

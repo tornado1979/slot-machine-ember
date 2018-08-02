@@ -3,20 +3,16 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-module('Integration | Component | slot-block', function(hooks) {
+module('Integration | Component | custom-button', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
-    
-    const img = 'some image'
-    const slot= 'slot'
-    const fruitName = 'a name'
 
-    await render(hbs`{{slot-block img=img  slot=slot fruitName=fruitName}}`);
+    await render(hbs`{{custom-button text="hello" disabled=disabled}}`);
 
-    assert.equal(this.element.textContent.trim(), 'ready');
+    assert.equal(this.element.textContent.trim(), 'hello');
 
   });
 });

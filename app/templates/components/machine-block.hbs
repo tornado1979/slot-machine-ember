@@ -1,0 +1,17 @@
+<div class="slot-machine-wrapper">
+  <div class="top">
+    <!-- 1st slot-->
+    {{slot-block img=reel1FruitImg slot=slotOne fruitName=reel1Fruit}}
+    <!-- 2nd slot-->
+    {{slot-block img=reel2FruitImg slot=slotTwo fruitName=reel2Fruit}}
+    <!-- 3rd slot-->
+    {{slot-block img=reel3FruitImg slot=slotThree fruitName=reel3Fruit}}
+  </div>
+  <div class="bottom">
+    <!-- 'spin button -->
+    {{custom-button text="spin!" disabled=disabled spin=(action "spin")}}
+    <!-- coins -->
+    <div class="coins">Coins {{coins}}</div>
+  </div>
+</div>
+{{yield}}

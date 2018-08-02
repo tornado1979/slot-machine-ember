@@ -1,3 +1,8 @@
+Below is a components schema to show how they communicate between them to form the pages.
+
+![components schema](readme-staff/components-schema.png)
+
+
 # fruit-machine
 
 This README outlines the details of collaborating on this Ember application.

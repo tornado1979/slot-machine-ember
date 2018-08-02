@@ -1,7 +1,16 @@
+Simple project in emberjs that emulates a slt machine.
+- By pressing the 'spin' button, the fruits are suffled and are shown with a small delay.
+- On each 'spin' i deduct -5 coins
+- depending on the fruits combinations, earn coins are added.
+
 Below is a components schema to show how they communicate between them to form the pages.
 
 ![components schema](readme-staff/components-schema.png)
 
+
+Slot machine in action.
+
+![slot machine in action](readme-staff/slot-machine-ember.gif)
 
 # fruit-machine
 
